@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    color: white;
+    /* text-align: center; */
+}
+/**************  background cover image  ***************/
+.cover {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6)) , url('https://source.unsplash.com/1600x900/?bank,money');
+    position: fixed;
+    top: 0;
+    z-index: -200; 
+}
+
+/******************************  home page  **********************************/
+
+.container {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+.welcome {
+    color: white;
+    margin-top: 70px;
+}
+.welcome h3 {
+    font-size: 30px;
+}
+.welcome h1 {
+    font-size: 40px;
+}
+
+/* home page mobile view */
+@media only screen and (max-width : 700px) {
+    .container {
+        text-align: left;
+    }
+    .welcome {
+        margin-top: 40px;
+        padding: 0 6%;
+    }
+    .welcome h3 {
+        font-size: 20px;
+    }
+    .welcome h1 {
+        font-size: 30px;
+    }
+}
+.allbtns {
+    max-width: 400px;
+    margin: 70px auto 0;
+}
+.allbtns a {
+    text-decoration: none;
+}
+.allbtns a button {
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
+    transition: .3s;
+    background: linear-gradient(to right , transparent 50% , rgb(3, 180, 3) 50%);
+    background-size: 200%;
+    background-position: left;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.allbtns a button:hover {
+    box-shadow:0px 0px 3px 1px white;
+    background-position: right;
+}
+.allbtns a button i {
+    float: left;
+}
+
+@media only screen and (max-width : 700px ){
+    .allbtns {
+        margin: 40px auto 0;
+    }
+}
+
+/*************************************** Create Usear ******************************* */
+
+.create {
+    width: 100%;
+}
+.create h1 {
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 4%;
+}
+.createUser {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 700px;
+    align-items: center;
+    margin: 2% auto;
+    padding: 50px 0 50px 50px;
+    border: 2px solid white;
+}
+.userimg img {
+    width: 250px;
+    height: 250px;
+}
+.userdata form{
+    margin: 0 50px;
+}
+.userdata form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 7px 0;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+}
+.userdata form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+    cursor: pointer;
+    background: linear-gradient(to right , transparent 50% , rgb(3, 180, 3) 50%);
+    background-size: 200%;
+    background-position: left;
+    border: 2px solid white;
+    color: white;
+    transition: .3s;
+}
+.userdata form button:hover {
+    background-position: right;
+}
+
+/* create user mobile view */
+@media only screen and (max-width : 700px ) {
+    .createUser {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.0);
+        max-width: 700px;
+        align-items: center;
+        margin: 0% auto;
+        padding: 0px 0 0px 0px;
+        border: 0px solid white;
+    }
+    .userimg {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    .userimg img {
+        width: 200px;
+        height: 200px;
+    }
+    .userdata form{
+        margin: 0 3%;
+    }
+    .userdata form input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 7px 0;
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        outline: none;
+    }
+}   
+
+/********************************** Transfer monery process ***************************************/
+
+.transferprocess {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 70px auto;
+}
+.transferprocess select , .transferprocess input , .transferprocess button {
+    background-color:transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    outline: none;
+}
+.transferprocess select option {
+    color: white;
+    background-color: black;
+}
+.transferprocess button {
+    background: linear-gradient(to right , transparent 50% , rgb(3, 180, 3) 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: .3s;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.transferprocess button:hover {
+    background-position: right;
+}
+
+/************************************** Contact **********************************************/
+.contact {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+.contactcontanner {
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.contactcontanner .contanner {
+    width: 30%;
+}
+.contactcontanner .contanner .heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    margin-bottom: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.07);
+}
+.heading .icon {
+    padding: 0 0 0 20px;
+    font-size: 20px;
+    color: rgb(3, 180, 3);
+}
+.heading .info {
+    width: 70%;
+    margin: 25px auto;
+}
+.heading .info #contactinfo {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+/* message form */
+.messageform {
+    width: 70%;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.07);
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.messageform .form {
+    width: 80%;
+    margin: 50px auto;
+}
+.messageform input , .messageform #inputbox {
+    width: 100%;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid white;
+    outline: none;
+    background-color: transparent;
+}
+.messageform button {
+    padding: 10px 50px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+    background: linear-gradient(to right , transparent 50% , rgb(3, 180, 3) 50%);
+    background-size: 200%;
+    background-position: left;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .3s;
+}
+.messageform button:hover {
+    background-position: right;
+}
+
+/* contact mobile view */ 
+@media only screen and (max-width : 700px) {
+    .contactcontanner {
+        width: 95%;
+        display: block;
+    }
+    .contactcontanner .contanner {
+        width: 100%;
+    }
+    /* message form */
+    .messageform {
+        width: 100%;
+        margin-left: 0px;
+        padding: 1px 0;
+    }
+    .messageform .form {
+        width: 93%;
+        margin: 50px auto;
+    }
+}

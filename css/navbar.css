@@ -1,0 +1,97 @@
+/*****************************  nevigation bar ****************************/
+.nevbar{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    display: flex;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+.logo a h1{
+    margin: 15px 100px;
+}
+.logo a h1 span{
+    color: rgb(1, 161, 1);
+}
+.menu{
+    flex: 1;
+    text-align: right;
+    margin-top: 28px;
+    margin-right: 100px;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    font-weight: 500;
+    position: relative;
+}
+.menu ul li a:hover{
+    color: rgb(1, 161, 1);
+}
+.menu ul li a span{
+    color: #c3073f;
+}
+.menuicon{
+    margin: auto;
+    color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+.menuicon i span {
+    font-weight: 600;
+}
+.topspace {
+    height: 80px;
+}
+
+/* navbar mobile view */
+@media only screen and (max-width : 700px){
+    .nevbar{
+        background-color: black;
+    }
+    .logo a h1{
+        margin: 15px 12px;
+    }
+    .menu{
+        text-align: right;
+        margin-right: 0px;
+        position:absolute;
+        background-color: black;
+        width: 100%;
+        top: 49px;
+        max-height: 0px;
+        overflow: hidden;
+        box-shadow: 0px 10px 12px -1px rgb(0 0 0 / 10%);
+        transition: .5s;
+    }
+    .menu ul li{
+        list-style: none;
+        display: block;
+        margin: 25px 40px 35px auto;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: white;
+        margin-left: 0px;
+        font-size: 15px;
+        transition: 0.5s;
+        font-size: 18px;
+    }
+    .menuicon{
+        display: block;
+        margin-right: 30px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+}

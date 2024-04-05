@@ -1,0 +1,45 @@
+/*************************************** table style ***************************/
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.all_users {
+    width: 100%;
+    color: white;
+    text-align: center;
+    overflow: auto;
+}
+table {
+    width: 800px;
+    border-collapse: collapse;
+    margin: 0px auto;
+    border: 1px solid white;
+}
+table tr th , table tr td{
+    padding: 10px;
+}
+table tr #transfer {
+    padding: 3px;
+}
+table tr td a button {
+    color: white;
+    padding: 7px 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    background: linear-gradient(to right , transparent 50% , rgb(3, 180, 3) 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: .3s;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+table tr td a button:hover {
+    background-position: right;
+}
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
